@@ -340,46 +340,53 @@
           <form action="#" method="get">
             <table>
               <tr>
-                <td colspan="2" style="height: 15px;"><label class="col-form-label">제목</label> 
-                  <textarea class="form-control" name="intro" rows="1"></textarea>
+                <td colspan="2" style="height: 15px;">
+                  <label class="col-form-label">제목
+                    <label class="form-check-label ms-5">
+                      <input class="form-check-input" type="checkbox" name="importance">
+                      <span class="ms-2">중요</span>    
+                    </label>
+                  </label>                   
+                  <input type="text" class="form-control" name="title" id="title">
                 </td>
               </tr>
               <tr>
-                <td style="width: 70%; height: 10px;" >
+                <td style="width: 70%; height: 15px;" >
                   <label for="">시작일</label><input type="date" class="form-control" value="2024-07-10">
                 </td>
-                <td style="height: 10px;">
+                <td style="height: 15px;">
                   <label for="">시작시간</label>
                   <input type="time" class="form-control" value="13:20">
                 </td>
               </tr>
               <tr>
-                <td style="width: 70%; height: 10px;">
+                <td style="width: 70%; height: 15px;">
                   <label for="">종료일</label><input type="date" class="form-control" value="2024-07-10">
                 </td>
-                <td style="height: 10px;">
+                <td style="height: 15px;">
                   <label for="">종료시간</label>
                   <input type="time" class="form-control" value="13:20">
                 </td>
               </tr>
               <tr>
-                <td colspan="2" style="height: 10px;"><label class="col-form-label">장소</label>
-                  <input class="form-control" list="browsers" name="browser" id="browser">
+                <td colspan="2" style="height: 15px;">
+                  <label class="col-form-label">제목</label>                   
+                  <input type="text" class="form-control" name="title" id="title">
                 </td>
               </tr>
               <tr>
-                <td colspan="2" style="height: 10px;"><label class="col-form-label">메모</label>
-                  <textarea class="form-control" name="intro" rows="1"></textarea>
+                <td colspan="2" style="height: 15px;">
+                  <label class="col-form-label">제목</label>                   
+                  <input type="text" class="form-control" name="title" id="title">
                 </td>
-              </tr>
-              <tr>
-                <td colspan="2" style="text-align: right;">
-                  <button type="submit" class="btn btn-primary me-1">제출</button>
-                  <button type="reset" class="btn btn-secondary">취소</button>
-                </td>
-              </tr>
             </table>
           </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary me-2">제출</button>
+            <button type="reset" class="btn btn-secondary">취소</button>
         </div>
 
 

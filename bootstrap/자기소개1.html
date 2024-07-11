@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/dabf1e1e6a.js" crossorigin="anonymous"></script>
+  <style>
+    * { font-family: 'Noto Sans KR', sans-serif; }
+    a {text-decoration: none; color: inherit;}
+    th { text-align: center; width: 14.28%; }
+		td { height: 120px; }
+  </style>
+</head>
+<body style="height: auto">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <a class="navbar-brand mx-5" href="#"><img src="img/KakaoTalk_20240709_135607705.png" alt="로고" style="height: 36px;"></a>
+        <li class="nav-item ms-3">
+          <a class="nav-link active" href="#달력"><i class="fa-regular fa-calendar"></i> 스케줄</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#자기소개"><i class="fa-regular fa-face-smile"></i> 자기소개</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#사용자"><i class="fa-solid fa-user-group"></i> 사용자</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link " href="#게시판"><i class="fa-solid fa-table-list"></i> 게시판</a>
+        </li>
+        <li class="nav-item dropdown ms-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-brain"></i> 인공지능</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link</a></li>
+            <li><a class="dropdown-item" href="#">Another link</a></li>
+            <li><hr class="dropdown-divider"></hr></li>
+            <li><a class="dropdown-item" href="#">A third link</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link disabled" href="#"><i class="fa-regular fa-user"></i>관리자</a>
+        </li>
+      </ul>
+      <span class="navbar-text me-3"><a href="#" target="_blank"><span class="badge bg-secondary me-2">Logout</span></a>홍길동님 환영합니다.</span>
+    </div>
+  </nav>
+
+    
+    <div id="달력"><br>
+      <div class="container" style="margin-top: 80px;">
+        <div class="row">
+          <div class="col-3" style="font-size: 0.9rem;">
+            <img src="img/페이커2.jfif" class="rounded-circle" alt="프로필"  style="width: 80%;">
+            <div class="mt-2">
+              <span>오늘의 상태 메세지를 이 자리에 적습니다.</span>
+              <a href="#"><span class="badge rounded-pill bg-secondary">수정</span></a>
+            </div>
+            <div class="mt-5">
+              <i class="fa-solid fa-envelope"></i> soos1308@gmail.com <br>
+              <i class="fa-brands fa-github-alt"></i>
+                <a href="https://github.com/sungkyoung8575" target="_blank"> sungkyoung8575</a><br>
+              <i class="fa-brands fa-instagram"> 인스타아이디~</i><br> 
+              <i class="fa-solid fa-location-dot"></i> 수원시 팔달구
+                <a href="#"><span class="badge rounded-pill bg-secondary">날씨</span></a><br>
+              <button type="button" class="btn btn-outline-primary btn-sm mt-3">Edit Profile</button>
+            </div>
+          </div>
+
+          <!-- Main 영역: 페이지마다 이 부분만 채워줌 -->
+          <div class="col-9">
+            <h3><strong>스케쥴</strong></h3>
+            <hr>
+            <div class="d-flex justify-content-between">
+              <div>2024-07-11(목)</div>
+              <div style="font-size: 1.2rem;">
+                <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                <a href="#"><i class="fa-solid fa-angle-left ms-2"></i></a>
+                <span class="mx-2">2024.07</span>
+                <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                <a href="#"><i class="fa-solid fa-angle-right ms-2"></i></a>
+              </div>
+              <div><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" ><i class="fa-solid fa-square-plus"></i> 기념일</a></div>
+            </div>
+            <table class="table table-bordered mt-3">
+              <tr class="table-secondary">
+                <th class="text-danger">일</th>
+                <th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+                <th class="text-primary">토</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-danger" style="opacity: 0.5;">
+                      <div><strong><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" >30</a></strong></div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" >1</a></strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" >2</a></strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" >3</a></strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" >4</a></strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" >5</a></strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-primary"><strong><a href="#" data-bs-toggle="modal" data-bs-target="#schedule" >6</a></strong></div>
+                    <div>소서</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-danger"><strong>7</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>8</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>9</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>10</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td style="background-color: #efffff;">
+                  <div class="d-flex justify-content-between">
+                    <div><strong>11</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>12</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-primary"><strong>13</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-danger"><strong>14</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>15</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>16</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>17</strong></div>
+                    <div>제헌절</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>18</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>19</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-primary"><strong>20</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-danger"><strong>21</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>22</strong></div>
+                    <div>대서</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>23</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>24</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>25</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>26</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-primary"><strong>27</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-danger"><strong>28</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>29</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>30</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div><strong>31</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div style="opacity: 0.5;"><strong>1</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div style="opacity: 0.5;"><strong>2</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex justify-content-between">
+                    <div class="text-primary" style="opacity: 0.5;"><strong>3</strong></div>
+                    <div></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="자기소개"><br>
+      <div class="container" style="margin-top: 80px;">
+        <div class="row">
+
+          <div class="col">
+            <h3><strong>자기소개</strong></h3>
+            <hr>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu3">Menu 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu4">Menu 4</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active"><br>
+                <div>
+                  <h1 id="내가 가봤던 곳">내가 가봤던 곳</h1>
+                  <img src="../html/img/보홀1.jpg" alt="">
+                  <p>필리핀</p>
+                  <img src="../html/img/일본.jpg" alt="">
+                  <p>일본</p>
+                  <img src="../html/img/태국.jpg" alt="">
+                  <p>태국</p>
+                </div>
+                <div style="float: right;">
+                  <a href="#자기소개"> <button type="button" class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-arrow-up" ></i></button></a>
+                </div>
+                <br><br><br><br><br>
+              </div>
+
+              <div id="menu1" class="container tab-pane fade"><br>
+                <div>
+                  <h1 id="내가 가보고 싶은 곳">내가 가보고 싶은 곳</h1>
+                  <img src="../html/img/일본 오키나와.jpg" alt="">
+                  <p>일본 오키나와</p>
+                  <h1 id="내가 가보고 싶은 곳">내가 가보고 싶은 곳</h1>
+                  <img src="../html/img/일본 오키나와.jpg" alt="">
+                  <p>일본 오키나와</p>
+                </div>              
+              </div>
+
+              <div id="menu2" class="container tab-pane fade"><br>
+                <div>
+                  <h1 id="내가 좋아하는 음식">내가 좋아하는 음식</h1>
+                  <img src="../html/img/잔치국수.jpg" alt="">
+                  <p>잔치국수</p>
+                  <img src="../html/img/햄버거.jpg" alt="">
+                  <p>햄버거</p>
+                </div>
+              </div>
+
+              <div id="menu3" class="container tab-pane fade"><br>
+                <div>
+                  <h1 id="내가 좋아하는 음식">내가 좋아하는 음식</h1>
+                  <img src="../html/img/잔치국수.jpg" alt="">
+                  <p>잔치국수</p>
+                  <img src="../html/img/햄버거.jpg" alt="">
+                  <p>햄버거</p>
+                </div>
+              </div>
+
+              <div id="menu4" class="container tab-pane fade"><br>
+                <div>
+                  <h1 id="내가 좋아하는 음식">내가 좋아하는 음식</h1>
+                  <img src="../html/img/잔치국수.jpg" alt="">
+                  <p>잔치국수</p>
+                  <img src="../html/img/햄버거.jpg" alt="">
+                  <p>햄버거</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      
+    
+
+
+  <nav class="navbar navbar-expand-sm bg-light fixed-bottom">
+    <div class="container-fluid justify-content-center">
+      <span class="navbar-text">
+        Copyright &copy; 2021-2024 CK World Corp. All rights reservde.
+      </span>
+    </div>
+  </nav>
+
+    <!-- The Modal -->
+  <div class="modal" id="schedule">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">일정추가</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="#" method="get">
+            <table>
+              <tr>
+                <td colspan="2" style="height: 15px;">
+                  <label class="col-form-label">제목
+                    <label class="form-check-label ms-5">
+                      <input class="form-check-input" type="checkbox" name="importance">
+                      <span class="ms-2">중요</span>    
+                    </label>
+                  </label>                   
+                  <input type="text" class="form-control" name="title" id="title">
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 70%; height: 15px;" >
+                  <label for="">시작일</label><input type="date" class="form-control" value="2024-07-10">
+                </td>
+                <td style="height: 15px;">
+                  <label for="">시작시간</label>
+                  <input type="time" class="form-control" value="13:20">
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 70%; height: 15px;">
+                  <label for="">종료일</label><input type="date" class="form-control" value="2024-07-10">
+                </td>
+                <td style="height: 15px;">
+                  <label for="">종료시간</label>
+                  <input type="time" class="form-control" value="13:20">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="height: 15px;">
+                  <label class="col-form-label">제목</label>                   
+                  <input type="text" class="form-control" name="title" id="title">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="height: 15px;">
+                  <label class="col-form-label">제목</label>                   
+                  <input type="text" class="form-control" name="title" id="title">
+                </td>
+            </table>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary me-2">제출</button>
+            <button type="reset" class="btn btn-secondary">취소</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
