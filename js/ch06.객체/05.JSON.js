@@ -13,5 +13,6 @@ console.log(externalForm);
 let internalForm = JSON.parse(externalForm);
 console.log(internalForm);
 
-let personArray = [person, {name: 'Maria', age: 25, jobL: '디자이너'}]
+let personArray = [person, {name: 'Maria', age: 25, job: '디자이너'}]
 console.log(JSON.stringify(personArray));
+console.log(personArray);
