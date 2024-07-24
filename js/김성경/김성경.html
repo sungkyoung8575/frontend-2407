@@ -15,6 +15,10 @@
             const week ='일월화수목금토'.split('');
             return `${now.getFullYear()}-${twoDigit(now.getMonth() + 1)}-${twoDigit(now.getDate())}(${week[now.getDay() % 7]}) `
         }
+            function myYoil(now) {
+            const week = '일월화수목금토'.split('');
+            return `(${week[now.getDay() % 7]})`
+        }
         function myTime(now) {
             return `${twoDigit(now.getHours())}:${twoDigit(now.getMinutes())}:${twoDigit(now.getSeconds())}`
         }
@@ -22,6 +26,7 @@
             setInterval(() => {    
                 let now = new Date();        
                 let dateStr = myDate(now);
+                let yoilStr = myYoil(now);
                 document.getElementById('y1').src = `img/${dateStr[0]}.png`
                 document.getElementById('y2').src = `img/${dateStr[1]}.png`
                 document.getElementById('y3').src = `img/${dateStr[2]}.png`
@@ -30,6 +35,7 @@
                 document.getElementById('w2').src = `img/${dateStr[6]}.png`
                 document.getElementById('d1').src = `img/${dateStr[8]}.png`
                 document.getElementById('d2').src = `img/${dateStr[9]}.png`
+                document.getElementById('yoil').innerHTML = yoilStr
 
 
                 let timeStr = myTime(now);
@@ -57,7 +63,7 @@
     <img src="img/-.png">
     <img id="d1">
     <img id="d2">
-    <img id="r"
+    <span id="yoil"></span>
     <hr>
     <h1 id="time"></h1>
     <img id="h1">

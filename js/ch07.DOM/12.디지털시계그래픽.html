@@ -15,6 +15,10 @@
             const week ='일월화수목금토'.split('');
             return `${now.getFullYear()}-${twoDigit(now.getMonth() + 1)}-${twoDigit(now.getDate())}(${week[now.getDay() % 7]}) `
         }
+        // function myYoil(now) {
+        //     const week = '일월화수목금토'.split('');
+        //     return `(${week[now.getDay() % 7]})`
+        // }
         function myTime(now) {
             return `${twoDigit(now.getHours())}:${twoDigit(now.getMinutes())}:${twoDigit(now.getSeconds())}`
         }
